@@ -347,3 +347,9 @@ button.visit {
 button:hover {
     opacity: 0.9;
 }
+
+/* Responsive Adjustments for Mobile Layouts */
+@media (max-width: 768px) {
+    .page-layout {
+        grid-template-columns: 1fr; /* Stack content and sidebar */
+    }
