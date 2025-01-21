@@ -347,6 +347,54 @@ button.visit {
 button:hover {
     opacity: 0.9;
 }
+    
+/* Sidebar Table of Contents */
+.sidebar-toc {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.sidebar-toc h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar-toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-toc li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-toc li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.sidebar-toc li a:hover {
+    color: #007bff;
+}
+
+.rating {
+    font-weight: bold;
+    color: #ff9800;
+}
+
+/* Hide sidebar on mobile */
+@media (max-width: 768px) {
+    .page-layout {
+        grid-template-columns: 1fr; /* Single column layout */\n    }\n\n    .sidebar-toc {\n        display: none;\n    }
+}
 
 /* Responsive Adjustments for Mobile Layouts */
 @media (max-width: 768px) {
